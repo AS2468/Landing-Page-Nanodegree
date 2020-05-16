@@ -80,7 +80,7 @@ section {
     padding: 1em;
     font-weight: bold;
     text-decoration: none;
-    color: white;
+    color: #fff;
     cursor: pointer;
 }
 
@@ -89,22 +89,13 @@ section {
     padding: 1em;
     font-weight: bold;
     text-decoration: none;
-    color: #000;
+    color: #fff;
    
 }
 
 .navbar__menu .menu__link:hover {
     background: #333;
-    color: #fff;
-    transition: ease 0.3s all;
-}
-
-.navbar__menu .li_item_active {
-    background: #333;
-    color: #fff;
-    padding: .5rem 1rem;
-    margin: 1rem 0rem;
-    border-radius: 7px;
+    color: rgb(0, 81, 255);
     transition: ease 0.3s all;
 }
 
