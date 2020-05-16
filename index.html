@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>Foodishh</h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="Item 1" class="your-active-class">
+      <div class="landing__container">
+        <h2>Avocado on toast</h2>
+        <p><i>Preparation time:</i> 5min. <i>Difficulty</i>: beginner.</p>
+          <p>This is a Millenial staple! Learn how to make the perfect avocado-on-toast in no time at all and without making any mess. Delicios!</p>
+          <p>How to Make It:
+            <br>Step 1-
+            <br> In a small bowl, combine avocado, lemon juice, salt, and pepper. Gently mash with the back of a fork.
+            
+            <br>Step 2-
+            <br>Top toasted bread with mashed avocado mixture. Drizzle with olive oil and sprinkle over desired toppings.</p>
+        </div>
+    </section>
+    <section id="section2" data-nav="Item 2">
+      <div class="landing__container">
+        <h2>Simple Biscotti</h2>
+        <p><i>Preparation time:</i> 5min. <i>Difficulty</i>: beginner. </p>
+          <p>Biscotti is the perfect treat to serve when you have unexpected guests. Simple to make out of few ingredients, this is one is a must for the recipe book!</p>
+        <p>How To Make It:
+          <br>Step 1-
+          <br>Preheat the oven to 375 degrees F (190 degrees C). Grease cookie sheets or line with parchment paper.
+         
+         <br> Step 2-
+          <br>In a medium bowl, beat together the oil, eggs, sugar and anise flavoring until well blended. Combine the flour and baking powder, stir into the egg mixture to form a heavy dough. Divide dough into two pieces. Form each piece into a roll as long as your cookie sheet. Place roll onto the prepared cookie sheet, and press down to 1/2 inch thickness.
+         
+        <br>Step 3-
+        <br>Bake for 25 to 30 minutes in the preheated oven, until golden brown. Remove from the baking sheet to cool on a wire rack. When The cookies are cool enough to handle, slice each one crosswise into 1/2 inch slices. Place the slices cut side up back onto the baking sheet. Bake for an additional 6 to 10 minutes on each side. Slices should be lightly toasted.</p>
+        </div>
+    </section>
+    <section id="section3" data-nav="Item 3">
+      <div class="landing__container">
+        <h2>Blueberry Waffles</h2>
+        <p><i>Preparation time:</i> 155min. <i>Difficulty</i>: intermediate.</p>
+          <p>Tired of store-bought bread or just missing that incredible bakery smell? We found what we think is the simplest bread recipe for you to test your baking skills. Try it and let us know what you think!</p>
+        <p>How To Make It:
+          <br>Step 1-
+          <br>Preheat the waffle maker.In a large bowl, whisk together the dry ingredients.
+          <br>Step 2-
+          <br>In a small bowl, whisk the eggs, melted butter, milk, and vanilla until well combined. Add the wet ingredients to the flour mixture, and stir until just combined. The mixture will be lumpy. Fold in the blueberries.
+          <br>Step 3-
+          <br>Spray the waffle maker with baking spray, and cook waffles until light golden brown and slightly crispy. Serve dusted with powdered sugar and a little maple syrup.</p>
+
+        </div>
+    </section>
+    <section id="section4" data-nav="Item 4">
+      <div class="landing__container">
+        <h2>Eggs, bacon and toast</h2>
+        <p><i>Preparation time:</i> 5min. <i>Difficulty</i>: beginner.</p>
+          <p>The breakfast of champions! Follow along to recreate this childhood staple, just like mom used to make it.</p>
+        <p>How To Make It:
+          <br>Step 1-
+          <br>Preheat oven to 375 degrees. Lightly butter 6 standard muffin cups. With a rolling pin, flatten bread slices slightly and, with a 4 1/4-inch cookie cutter, cut into 8 rounds. Cut each round in half, then press 2 halves into each muffin cup, overlapping slightly and making sure bread comes up to edge of cup. Use extra bread to patch any gaps. Brush bread with remaining butter.
+          
+          <br>Step 2-
+          <br>In a large skillet, cook bacon over medium, until almost crisp, 4 minutes, flipping once. (It will continue to cook in the oven.) Lay 1 bacon slice in each bread cup and crack an egg over each. Season with salt and pepper. Bake until egg whites are just set, 20 to 25 minutes. Run a small knife around cups to loosen toasts. Serve immediately.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <p>&copy Udacity</p>
+  </footer>
+
+ <!-- Linking JS -->
+ <script src="js/app.js"></script>
+</body>
+</html>
